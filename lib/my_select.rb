@@ -2,12 +2,11 @@ def my_select(collection)
  
  arr=[]
  counter = 0 
+ other_counter = 0
  while counter < collection.length
-  collection[counter]  
   if yield collection[counter] == true
-    yield collection[counter]
-  else yield collection[counter] == false
-    
+    arr[other_counter]=yield collection[counter]
+    other_counter += 1 
   end
   counter+=1
  end 
