@@ -15,8 +15,7 @@ def my_select(collection)
 end
 
 nums = [1, 2, 3, 4, 5]
-nums.even?
 
-#my_select(nums) do |num|
- #     num.even?
-#end
+my_select(nums) do |num|
+      num.even?
+end
