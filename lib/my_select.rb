@@ -4,7 +4,7 @@ def my_select(collection)
  counter = 0 
  other_counter = 0
  while counter < collection.length
-  if yield collection[counter] == true
+  if (yield(collection[counter]) == true)
     arr[other_counter] = yield collection[counter]
     other_counter += 1 
   end
@@ -15,7 +15,8 @@ def my_select(collection)
 end
 
 nums = [1, 2, 3, 4, 5]
+nums.even?
 
-my_select(nums) do |num|
-      nums.even?
-end
+#my_select(nums) do |num|
+ #     num.even?
+#end
