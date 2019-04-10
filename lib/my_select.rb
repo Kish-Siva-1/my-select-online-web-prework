@@ -5,7 +5,7 @@ def my_select(collection)
  other_counter = 0
  while counter < collection.length
   if (yield(collection[counter]) == true)
-    arr[other_counter] = yield collection[counter]
+    arr[other_counter] = collection[counter]
     other_counter += 1 
   end
  counter+=1
