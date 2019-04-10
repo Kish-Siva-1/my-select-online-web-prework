@@ -13,3 +13,7 @@ def my_select(collection)
  arr
   
 end
+
+my_select(nums) do |num|
+      num.even?
+end
